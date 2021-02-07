@@ -1,8 +1,11 @@
 
 export const Business = (businessObj) => {
     return `
-    <section class="supply">
-        <h2 class="supply__type">${businessObj.companyName}</h2>
+    <section class="business">
+        <h2 class="business__name">${businessObj.companyName}</h2>
+        <p>${businessObj.addressFullStreet}</p>
+        <p>${businessObj.addressCity}, ${businessObj.addressStateCode} ${businessObj.addressZipCode}</p>
     </section>
     `
 }
+

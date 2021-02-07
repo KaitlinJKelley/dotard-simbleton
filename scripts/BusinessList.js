@@ -3,10 +3,11 @@ import { useBusinesses } from "./BusinessProvider.js"
 
 
 export const businessList = () => {
-    const contentTarget = document.querySelector(".container")
+    let contentTarget = document.querySelector(".container")
 
     const businessArray = useBusinesses()
 
+    contentTarget.innerHTML = `<h1>Active Businesses</h1>`
     businessArray.forEach((businessObj) => {contentTarget.innerHTML += `${Business(businessObj)}`})
 }
 

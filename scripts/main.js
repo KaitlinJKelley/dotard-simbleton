@@ -4,3 +4,5 @@ import { businessList } from "./BusinessList.js"
 console.log("Let's get started!")
 
 businessList()
+// newYorkBusinesses()
+
